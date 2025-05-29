@@ -6,61 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: #fff;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fdf5ec;
+      color: #3a2e2e;
       text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
       padding: 40px 20px;
-      color: #333;
     }
-    img {
-      max-width: 220px;
-      margin-bottom: 30px;
+
+    .logo {
+      width: 200px;
+      margin: 0 auto 20px;
     }
+
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 16px;
-      color: #555;
+      margin-bottom: 30px;
+      color: #5c504f;
     }
-    .btn {
-      display: inline-block;
-      margin: 15px;
-      padding: 15px 30px;
-      font-size: 16px;
-      background-color: #e63946;
-      color: #fff;
+
+    .catalog-btn {
+      display: block;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 400px;
+      border: none;
+      border-radius: 12px;
       text-decoration: none;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .catalog-btn img {
+      width: 100%;
+      display: block;
+    }
+
+    .catalog-btn span {
+      display: block;
+      background-color: #fff1e6;
+      padding: 16px;
+      font-size: 18px;
+      color: #4a3d3d;
+    }
+
+    .main-site-btn {
+      background-color: #d17748;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      font-size: 16px;
       border-radius: 8px;
+      display: inline-block;
+      margin-top: 30px;
       transition: background 0.3s ease;
     }
-    .btn:hover {
-      background-color: #d62828;
+
+    .main-site-btn:hover {
+      background-color: #b76336;
     }
-    .whatsapp {
-      margin-top: 40px;
-      display: inline-block;
-      font-size: 18px;
-      background: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .main-site-btn {
+        font-size: 15px;
+        padding: 12px 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/YOURUSERNAME/catalog/main/logo.png" alt="FlavouredLove Logo">
-  <h1>Welcome to FlavouredLove Catalog</h1>
-  <p>Select a category to view or download the catalogue:</p>
+  <div class="container">
+    <img class="logo" src="https://raw.githubusercontent.com/gundarohit2009/catalog/main/logo.png" alt="FlavouredLove Logo">
+    <h1>Welcome to FlavouredLove Catalog</h1>
+    <p>Select a category to view or download catalogue</p>
 
-  <a class="btn" href="https://drive.google.com/file/d/16hHkouNSkFUcMv64bsVhQEAvbiYRzlyr/view" target="_blank">Jewellery Catalogue</a>
-  <a class="btn" href="https://drive.google.com/file/d/YOUR_CORPORATE_PDF_ID/view?usp=sharing" target="_blank">Corporate Gifting Catalogue</a>
+    <a class="catalog-btn" href="https://drive.google.com/file/d/16hHkouNSkFUcMv64bsVhQEAvbiYRzlyr/view" target="_blank">
+      <img src="https://i.imgur.com/lsb6dIJ.jpg" alt="Jewellery Catalogue">
+      <span>Jewellery Catalogue</span>
+    </a>
 
-  <br>
-  <a class="whatsapp" href="https://wa.me/919182434109" target="_blank">
-    Chat on WhatsApp
+    <a class="catalog-btn" href="https://drive.google.com/file/d/YOUR_CORPORATE_CATALOG_ID/view?usp=sharing" target="_blank">
+      <img src="https://i.imgur.com/EBY0LMR.jpg" alt="Corporate Gifting Catalogue">
+      <span>Corporate Gifting Catalogue</span>
+    </a>
+
+    <a class="main-site-btn" href="https://flavouredlove.com" target="_blank">Visit Our Main Website</a>
+  </div>
+
+  <a class="whatsapp-button" href="https://wa.me/919182434109" target="_blank" title="Chat with us">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 </body>
 </html>
